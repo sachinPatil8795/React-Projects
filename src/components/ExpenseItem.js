@@ -1,14 +1,20 @@
+import ExpenseItemStyle from './ExpenseItemStyle.css'
+
 function ExpenseItem() {
+    const expenseDate = new Date(2023,7,8);
+    const expenseTitle = 'Birthday Party';
+    const expenseAmount = 500;
+    const LocationOfExpenditure = 'Taj Hotel'
     return (
-        <div>
-            <ul>
-                <h3>Expense Items</h3>
-                <li>Food Rs. 10</li>
-                <li>Petrol Rs. 100</li>
-                <li>Movies Rs. 200</li>
-            </ul>
+        <div className = "expense-item">
+            <div>{expenseDate.toISOString()}</div>
+            <div className='expense-item__description'>
+                <h2>{expenseTitle}</h2>
+                <div className='expense-item__price'>${expenseAmount}</div>
+                <div className='expense-item__location'>{LocationOfExpenditure}</div>
+            </div>
         </div>
-    )
+    );
 }
 
 export default ExpenseItem
