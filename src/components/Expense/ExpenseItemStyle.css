@@ -1,11 +1,15 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+
 .expense-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   padding: 0.5rem;
   margin: 1rem 0;
-  border-radius: 12px;
   background-color: #4b4b4b;
 }
 
@@ -36,6 +40,13 @@
   padding: 0.5rem;
   border-radius: 12px;
 }
+
+.expense-item__price:hover {
+  transform: scale(1.1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(31, 31, 31);
+}
+
 .expense-item__location {
   font-size: 1rem;
   font-weight: bold;
@@ -44,6 +55,12 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
+}
+
+.expense-item__location:hover {
+  transform: scale(1.1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(31, 31, 31);
 }
 
 @media (min-width: 580px) {

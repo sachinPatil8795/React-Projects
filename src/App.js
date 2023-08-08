@@ -1,12 +1,14 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Card from "./components/UI/Card";
+import './components/Expense/ExpenseItemStyle.css'
+import Expenses from "./components/Expense/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
-      title: "Birthday party",
+      title: "iPhone",
       date: new Date(2023, 7, 8),
-      amount: 500,
-      location: "Taj Hotel",
+      amount: 600,
+      location: "Belgaum",
     },
     {
       title: "Travel",
@@ -27,20 +29,13 @@ function App() {
       location: "Belgaum",
     },
   ];
+
   return (
-    <div>
-      <h1>Welcome to Expense Tracker</h1>
-      {expenses.map((expense, index) => (
-        <ExpenseItem
-          key={index} // Adding a unique key for React's rendering optimization
-          title={expense.title}
-          date={expense.date}
-          amount={expense.amount}
-          location={expense.location}
-        />
-      ))}
-    </div>
+    <Card>
+      <h1 className="main-header">Welcome to Expense Tracker</h1>
+      <Expenses items={expenses} />
+    </Card>
   );
-}
+};
 
 export default App;
