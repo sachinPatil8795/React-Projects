@@ -1,5 +1,5 @@
 import Card from "./components/UI/Card";
-import './components/Expense/ExpenseItemStyle.css'
+import "./components/Expense/ExpenseItemStyle.css";
 import Expenses from "./components/Expense/Expenses";
 
 const App = () => {
@@ -7,26 +7,22 @@ const App = () => {
     {
       title: "iPhone",
       date: new Date(2023, 7, 8),
-      amount: 600,
-      location: "Belgaum",
+      amount: 600
     },
     {
       title: "Travel",
       date: new Date(2023, 7, 20),
-      amount: 800,
-      location: "Maldives",
+      amount: 800
     },
     {
       title: "Mercedes Benz",
       date: new Date(2023, 11, 11),
-      amount: 50000,
-      location: "Pune",
+      amount: 50000
     },
     {
       title: "House",
       date: new Date(2023, 12, 8),
-      amount: 100000,
-      location: "Belgaum",
+      amount: 100000
     },
   ];
 

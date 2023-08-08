@@ -11,11 +11,10 @@ const Expenses = (props) => {
           title={expense.title}
           date={expense.date}
           amount={expense.amount}
-          location={expense.location}
         />
       ))}
     </Card>
   );
-}
+};
 
 export default Expenses;

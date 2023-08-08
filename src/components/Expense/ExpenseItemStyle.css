@@ -47,7 +47,7 @@
   background-color: rgb(31, 31, 31);
 }
 
-.expense-item__location {
+/* .expense-item__location {
   font-size: 1rem;
   font-weight: bold;
   color: white;
@@ -55,13 +55,13 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
-}
+} */
 
-.expense-item__location:hover {
+/* .expense-item__location:hover {
   transform: scale(1.1);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: rgb(31, 31, 31);
-}
+} */
 
 @media (min-width: 580px) {
   .expense-item__description {

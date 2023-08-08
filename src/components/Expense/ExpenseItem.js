@@ -3,14 +3,17 @@ import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 
 const ExpenseItem = (props) => {
+  const deleteExpense = () => {
+    console.log('Deleted !!!');
+  }
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <ExpenseDetails
         title={props.title}
         amount={props.amount}
-        location={props.location}
       />
+      <button onClick={deleteExpense}>Delete expense</button>
     </Card>
   );
 };
