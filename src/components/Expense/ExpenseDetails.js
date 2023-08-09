@@ -1,4 +1,5 @@
-import ExpenseItemStyle from "./ExpenseItemStyle.css";
+import React from "react";
+import "./ExpenseItemStyle.css";
 
 const ExpenseDetails = (props) => {
   return (

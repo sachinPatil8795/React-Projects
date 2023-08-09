@@ -1,3 +1,4 @@
+import React from "react";
 import "./ExpenseDateStyle.css";
 
 const ExpenseDate = (props) => {
