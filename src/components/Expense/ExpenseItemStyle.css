@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem;
 }
 
 .expense-item {
@@ -28,7 +27,7 @@
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  color: whitesmoke;
+  color: white;
 }
 
 .expense-item__price {
@@ -39,10 +38,6 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
-}
-
-.expense-item__price:hover {
-  background-color: #510674;
 }
 
 @media (min-width: 580px) {
